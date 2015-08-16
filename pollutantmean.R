@@ -21,11 +21,14 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   data <- do.call(rbind, data)
   
   #display sulfate or nitrate mean
-  if (pollutant == "sulfate") {
+  if (pollutant == "sulfate") 
+  {
     sulfate <- mean(data[,2], na.rm = TRUE)
     sulfate <- round(sulfate, digits = 3)
     return(sulfate)
-  } else {
+  } 
+  else
+  {
     nitrate <- mean(data[,3], na.rm = TRUE)
     nitrate <- round(nitrate, digits = 3)
     return(nitrate) 
