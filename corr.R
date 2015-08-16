@@ -14,7 +14,7 @@ corr <- function(directory, threshold = 0) {
 	datafiles<-c()
 	datafiles<-c(datafiles,paste(directory,"/",formatC(id,width=3,flag="0"),".csv",sep=""))
 	
-	#vect is a numeric vertor which has stores correlation between sulfate and nitrate	
+	#vect is a numeric vertor which stores correlation between sulfate and nitrate	
 	vect<-numeric()
 	i<-1
 	#nobs is the no of complete cases in each id 
